@@ -1,0 +1,125 @@
+.boton-navegacion,
+.boton-form button {
+    background-color: var(--color-principal);
+    color: var(--color-texto-oscuro);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px var(--color-sombra);
+}
+
+.boton-navegacion:hover,
+.boton-form button:hover {
+    background-color: var(--color-boton-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--color-sombra);
+}
+
+/* === Estilos del Widget Flotante (Tech-Menu) === */
+#widget-flotante {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+    text-align: right;
+}
+
+#boton-ayuda {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: var(--color-principal); 
+    color: var(--color-texto-claro); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px var(--color-sombra), 0 0 10px rgba(255, 255, 255, 0.4) inset; 
+    border: 3px solid var(--color-texto-claro);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#boton-ayuda:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px var(--color-principal); 
+}
+
+#menu-flotante {
+    background-color: var(--color-terciario); 
+    width: 320px; 
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.9);
+    margin-top: 15px;
+    border: 1px solid var(--color-principal);
+    display: none; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out; 
+    text-align: left;
+}
+
+.menu-visible {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+#menu-flotante h3 {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 800;
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.widget-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.widget-nav li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--color-borde);
+}
+
+.widget-nav li:last-child {
+    border-bottom: none;
+}
+
+.widget-nav a {
+    color: var(--color-texto-claro); 
+    font-size: 1em;
+    font-weight: 400; 
+    transition: all 0.2s;
+    display: block;
+    text-decoration: none;
+}
+
+.widget-nav a:hover {
+    color: var(--color-principal); 
+    padding-left: 10px; 
+    font-weight: 600; 
+}
+
+.nota-ayuda {
+    font-size: 0.8em;
+    color: var(--color-texto-secundario);
+    font-style: italic;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}

@@ -1,0 +1,116 @@
+#footer {
+    background-color: var(--color-terciario);
+    padding: 40px 40px;
+    color: var(--color-texto-secundario);
+    border-top: 4px solid var(--color-principal);
+}
+
+.footer-contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    display: block;
+    width: 120px;
+    filter: brightness(1.1);
+}
+
+.navegacion-footer ul {
+    padding: 0;
+}
+
+.navegacion-footer li {
+    margin-bottom: 10px;
+}
+
+.navegacion-footer a {
+    color: var(--color-texto-claro);
+    transition: color 0.3s;
+    font-size: 0.95em;
+}
+
+.navegacion-footer a:hover {
+    color: var(--color-principal);
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.redes-sociales a {
+    color: var(--color-principal);
+    transition: color 1s, transform 1s;
+}
+
+.redes-sociales a:hover {
+    color: var(--color-texto-claro);
+    transform: scale(1.1);
+}
+
+.footer-info-legal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.navegacion-legal ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navegacion-legal a {
+    color: var(--color-texto-secundario);
+    font-size: 0.85em;
+}
+
+.navegacion-legal a:hover {
+    color: var(--color-principal);
+}
+
+@media (max-width: 768px) {
+    .footer-contenido-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .navegacion-footer,
+    .redes-sociales {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .footer-info-legal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-bottom: 10px;
+    }
+
+    .navegacion-legal ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
